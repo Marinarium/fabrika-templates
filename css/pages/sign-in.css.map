@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/sign-in.scss"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,YAAY,EAAA","file":"sign-in.css","sourcesContent":[".sign-in {\r\n  max-width: 1116px;\r\n  margin: auto;\r\n}\r\n"]}

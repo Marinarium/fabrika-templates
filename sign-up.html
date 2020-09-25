@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>fabrika - sign in</title>
+    <title>fabrika - sign up</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="sign-in wrapper">
+<div class="sign-up wrapper">
     <div class="content">
         <header class="header">
             <a href="#" class="logo">fabrika</a>
@@ -37,11 +37,11 @@
         </header>
         <main class="main">
             <form class="form" action="/">
-                <h1 class="form__title">Sign in</h1>
+                <h1 class="form__title">Sign up</h1>
                 <div class="form__desc">
                     <p class="form__p">Copy
-                        Account will allow you to track your order status online.</p>
-                    <p class="form__p">Don’t have an account yet? <a href="#" class="form__link">Create an account</a></p>
+                        Account will allow you to track your order status online</p>
+                    <p class="form__p">Already have an account? <a href="#" class="form__link">Log in</a></p>
                 </div>
                 <div class="form__input-wrap">
                     <label for="mail" class="form__label">Email</label>
@@ -56,6 +56,12 @@
                         <input id="password" type="password" class="form__input" required placeholder="Enter password">
                         <button class="form__eye" type="button"></button>
                     </div>
+                </div>
+                <div class="form__input-wrap">
+                    <input type="checkbox" class="form__checkbox-input" id="terms" name="terms" value="terms">
+                    <label for="terms" class="form__label">I agree with the
+                        <a href="#" class="form__link">terms ofuse</a>
+                    </label>
                 </div>
                 <button class="form__btn" type="submit">Sign in</button>
             </form>
