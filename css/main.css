@@ -434,4 +434,16 @@ body {
     background-color: #EDEEEF;
     color: #fff; }
 
+.password-recovery {
+  max-width: 1116px;
+  margin: auto;
+  padding: 0 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .password-recovery .header {
+    margin-bottom: 55px; }
+  .password-recovery .form__desc {
+    margin-bottom: 25px;
+    width: 290px; }
+
 /*# sourceMappingURL=main.css.map */
