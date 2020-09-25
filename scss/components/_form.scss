@@ -1,0 +1,134 @@
+.form {
+  padding: 35px 0;
+  box-sizing: border-box;
+
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'kern' off;
+    color: #686E7D;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-bottom: 25px;
+  }
+
+  &__p {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #212121;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $accent-color;
+    text-decoration: none;
+
+    &_light {
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: -0.02em;
+      color: $light-grey;
+    }
+  }
+
+  &__label-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 286px;
+  }
+
+  &__label {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #212121;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    width: 288px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $main-color;
+    padding: 8px 14px;
+    border: 1px solid rgba(33, 33, 33, 0.08);
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-bottom: 15px;
+  }
+
+  ::placeholder {
+    color: $light-grey;
+  }
+
+  :focus{
+     outline-width: 1px;
+     outline-color: $accent-color;
+     outline-style: solid;
+     outline-offset: 0;
+  }
+
+  .form__password-wrap {
+    position: relative;
+    width: 288px;
+  }
+
+  &__eye{
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    right: 14px;
+    display: block;
+    cursor: pointer;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHkSURBVHgB1ZRNTsJAFMfnlSadaGLqDfAE4g3wBnoCdQXEhQxVE1eUlYkKowtTWQkn0BuoJ5AbiCcQd2XBPN+rjBYpQV3pS5pOZt785v8+ZoT46wbzHMLw2ve82Ofx0VGl/2tgsxltA8CWEFggt8F4Ok/fPSJ2g6DS+Rbw5OSy4LruNYEGoxE2XFf2lNqxQHF6GhVzOagzfDjE9a+qJ4CtVpsVhaSgMUvBZARCC+FUa7VSdwp4dtbecBzUALiu1PxcsWkd5RHhjjChhSbA4+Mo73lwlwXTul1HNFUe0+ZOEJSVmEpR7saG7/Akw8j5IgOmCbYCIOkTa5SKZQo1TPscHu72eK/nOTeJwmazXaVQV5Uq73wNqdWKXhhkD9Ja+4gLTxTe8rTvFYnCB1JoyClphxkmPyocx9Kf5UWMPhVo4FA1QxLqs9IMpwtjhppzzA0uJbcLdjPU7VEkxSAonSc5BDCbVJA9TnDakQ8jx1fPE49LS/GTMfhcq5UnDubD6FflgiYsuzC+GfWsZp1ltjuMAbW/X7rlOSelpsMNTdV6ZPg8GF+C9+7AhoVNKLT22ayiz1fv4KByb9c4j4uLccFePYDRplK7vfT+bzwOosjw91mkKkPvR49Dlo0TL6SUg/RD8T/tDVMd9jVP9wnHAAAAAElFTkSuQmCC');
+  }
+
+
+  &__btn {
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $main-color;
+    padding: 9px 18px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+
+}
