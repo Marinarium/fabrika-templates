@@ -3,13 +3,29 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 18px;
-
   :focus{
     outline-width: 1px;
     outline-color: $accent-color;
     outline-style: solid;
     outline-offset: 2px;
   }
+
+  &_home{
+    max-width: 1210px;
+    margin-left: 17.344%;
+
+    @include respond-to(laptops) {
+      margin: auto;
+    }
+  }
+}
+
+.wrap-home {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 15px;
+  z-index: 100;
 }
 
 .logo {
@@ -20,6 +36,24 @@
   line-height: 100%;
   color: #2F2F2F;
   text-decoration: none;
+
+  &_home{
+    letter-spacing: 0.2em;
+    font-size: 25px;
+  }
+
+  &_beta:after {
+    content: '';
+    width: 29px;
+    height: 17px;
+    background-image: url("../img/beta.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+  }
 }
 
 .main-menu {
@@ -48,32 +82,18 @@
   &__item {
     display: inline-block;
   }
+}
 
-  &__link {
-    text-decoration: none;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.2;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
+.header_home {
+  .main-menu {
+    flex-basis: 35.5%;
+  }
 
-    &_in{
-      color: #2C2C2C;
-      padding: 11px 10px;
-      margin-right: 10px;
-    }
+  .main-menu__link {
+    font-size: 14px;
+  }
 
-    &_up{
-      color: #fff;
-      box-sizing: border-box;
-      width: 83px;
-      height: 39px;
-      padding: 11px 5px;
-      background: $accent-color;
-      border-radius: 10px;
-    }
+  .user-menu__link {
+    font-size: 14px;
   }
 }

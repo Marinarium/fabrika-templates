@@ -1,0 +1,77 @@
+.workflow {
+  margin-bottom: 61px;
+  margin-left: 17.344%;
+  @include respond-to(laptops) {
+    margin: auto;
+    max-width: 1210px;
+    margin-bottom: 61px;
+  }
+}
+
+.workflow__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.workflow__main-title {
+  margin-right: 40px;
+}
+
+.workflow__link {
+  width: 161px;
+  background-color: #000;
+  color: #fff;
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.workflow__step {
+  max-width: 300px;
+  display: inline-block;
+  margin-right: 11.154%;
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.workflow__title {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.workflow__extra-link {
+  color: #fff;
+  background-color: $accent-color;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.workflow__p {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #C0C0C0;
+
+  &_sm {
+    max-width: 248px;
+    margin-left: auto;
+  }
+}
+

@@ -34,24 +34,6 @@
     }
   }
 
-  &__link{
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: $accent-color;
-    text-decoration: none;
-
-    &_light {
-      font-size: 12px;
-      line-height: 133%;
-      letter-spacing: -0.02em;
-      color: $light-grey;
-    }
-  }
-
   &__input-wrap {
     margin-bottom: 15px;
   }

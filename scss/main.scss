@@ -3,11 +3,23 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/media";
+@import "base/basic";
 
 @import "components/header";
+@import "components/controls";
+@import "components/titles";
+@import "components/first-screen";
+@import "components/pricing";
+@import "components/workflow";
+@import "components/motto";
 @import "components/form";
+@import "components/tech";
+@import "components/drop";
+@import "components/feedback";
 @import "components/footer";
 
 @import "pages/sign-in";
 @import "pages/sign-up";
 @import "pages/password-recovery";
+
+

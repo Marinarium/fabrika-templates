@@ -1,0 +1,50 @@
+.first-screen{
+  background-image: url("../img/bg-first-screen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin-bottom: 50px;
+}
+
+.first-screen__text-content {
+  max-width: 1210px;
+  margin-left: 17.344%;
+  padding-top: 699px;
+  @include respond-to(laptops) {
+    margin: auto;
+  }
+}
+
+.first-screen__title {
+  max-width: 575px;
+  margin-bottom: 50px;
+}
+
+.first-screen__advantages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.first-screen__advantage-item {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  color: #C0C0C0;
+  max-width: 330px;
+  margin-right: 10.992%;
+
+  &:nth-child(2){
+    max-width: 360px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.first-screen__b {
+  color: #000;
+}

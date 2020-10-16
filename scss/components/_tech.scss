@@ -1,0 +1,160 @@
+.tech {
+  margin-bottom: 70px;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 282px;
+    height: 472px;
+    background-image: url("../img/bg-tech.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+
+    @include respond-to(laptops) {
+      opacity: 0.8;
+    }
+  }
+}
+
+.tech__wrap {
+  margin-left: 17.344%;
+  margin-right: 17.344%;
+
+  @include respond-to(laptops) {
+    margin: auto;
+    max-width: 1210px;
+  }
+}
+
+.tech__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tech__main-title {
+  margin-right: 40px;
+}
+
+.tech__link {
+  width: 261px;
+  background-color: #000;
+  color: #fff;
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.tech__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tech__radio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 590px;
+}
+
+.tech__radio-label {
+  padding: 25px 0;
+  display: block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tech__radio {
+  position: absolute;
+}
+
+.tech__radio-style {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  background-color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.tech__radio:checked + .tech__radio-style {
+  background-color: $accent-color;
+  color: #fff;
+}
+
+.tech__desc-list {
+  flex-basis: 600px;
+}
+
+.tech__desc {
+  background: #fff;
+  border: 1px solid #D5D5D5;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px 50px;
+  flex-basis: 600px;
+}
+
+.tech_p {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+}
+
+.tech_p_light {
+  color: #C0C0C0;
+}
+
+.tech__b {
+  font-style: normal;
+  font-weight: 800;
+}
+
+.tech__mail {
+  color: #C0C0C0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
