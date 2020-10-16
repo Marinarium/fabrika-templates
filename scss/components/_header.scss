@@ -54,9 +54,23 @@
     position: relative;
     top: -5px;
   }
+
+  @include hide-block;
+
+  &.active-animation {
+    @include show-block;
+  }
 }
 
 .main-menu {
+
+  @include hide-block;
+  transition-delay: 350ms;
+
+  &.active-animation {
+    @include show-block;
+  }
+
   &__item {
     display: inline-block;
     margin-right: 50px;
@@ -79,6 +93,13 @@
 }
 
 .user-menu {
+  @include hide-block;
+  transition-delay: 400ms;
+
+  &.active-animation {
+    @include show-block;
+  }
+
   &__item {
     display: inline-block;
   }

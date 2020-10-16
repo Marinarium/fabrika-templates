@@ -9,7 +9,7 @@
 .first-screen__text-content {
   max-width: 1210px;
   margin-left: 17.344%;
-  padding-top: 699px;
+  padding-top: 660px;
   @include respond-to(laptops) {
     margin: auto;
   }
@@ -18,12 +18,26 @@
 .first-screen__title {
   max-width: 575px;
   margin-bottom: 50px;
+
+  @include hide-block;
+  transition-delay: 400ms;
+
+  &.active-animation {
+    @include show-block;
+  }
 }
 
 .first-screen__advantages {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @include hide-block;
+  transition-delay: 450ms;
+
+  &.active-animation {
+    @include show-block;
+  }
 }
 
 .first-screen__advantage-item {

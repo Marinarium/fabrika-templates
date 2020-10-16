@@ -15,10 +15,23 @@
   line-height: 100%;
   box-sizing: border-box;
   padding: 90px 118px;
+  margin-top: 61px;
+  z-index: 50;
+  position: relative;
 
   @include respond-to(laptops) {
-    margin: 0 auto 50px;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 1270px;
     font-size: 80px;
+  }
+
+  @include hide-block;
+  transform: translate(0, 110%);
+  transition-delay: 0ms;
+  transition-property: transform;
+
+  &.active-animation {
+    @include show-block;
   }
 }

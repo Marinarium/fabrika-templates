@@ -1,10 +1,18 @@
 .workflow {
   margin-bottom: 61px;
   margin-left: 17.344%;
+
   @include respond-to(laptops) {
     margin: auto;
     max-width: 1210px;
-    margin-bottom: 61px;
+    //margin-bottom: 61px;
+  }
+
+  @include hide-block;
+  transition-delay: 300ms;
+
+  &.active-animation {
+    @include show-block;
   }
 }
 
