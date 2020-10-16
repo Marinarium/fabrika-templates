@@ -20,7 +20,7 @@
   margin-bottom: 50px;
 
   @include hide-block;
-  transition-delay: 400ms;
+  transition-delay: 500ms;
 
   &.active-animation {
     @include show-block;
@@ -33,7 +33,7 @@
   align-items: flex-start;
 
   @include hide-block;
-  transition-delay: 450ms;
+  transition-delay: 600ms;
 
   &.active-animation {
     @include show-block;

@@ -208,8 +208,8 @@ $phone: 480px;
   opacity: 0;
   -webkit-transition: all 800ms ease 100ms;
   transition: all 800ms ease 100ms;
-  -webkit-transition-delay: 350ms;
-          transition-delay: 350ms; }
+  -webkit-transition-delay: 450ms;
+          transition-delay: 450ms; }
   .main-menu.active-animation {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -236,8 +236,8 @@ $phone: 480px;
   opacity: 0;
   -webkit-transition: all 800ms ease 100ms;
   transition: all 800ms ease 100ms;
-  -webkit-transition-delay: 400ms;
-          transition-delay: 400ms; }
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms; }
   .user-menu.active-animation {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -368,8 +368,8 @@ $phone: 480px;
   opacity: 0;
   -webkit-transition: all 800ms ease 100ms;
   transition: all 800ms ease 100ms;
-  -webkit-transition-delay: 400ms;
-          transition-delay: 400ms; }
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms; }
   .first-screen__title.active-animation {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -390,8 +390,8 @@ $phone: 480px;
   opacity: 0;
   -webkit-transition: all 800ms ease 100ms;
   transition: all 800ms ease 100ms;
-  -webkit-transition-delay: 450ms;
-          transition-delay: 450ms; }
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms; }
   .first-screen__advantages.active-animation {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);

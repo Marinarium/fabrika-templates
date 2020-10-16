@@ -65,7 +65,7 @@
 .main-menu {
 
   @include hide-block;
-  transition-delay: 350ms;
+  transition-delay: 450ms;
 
   &.active-animation {
     @include show-block;
@@ -94,7 +94,7 @@
 
 .user-menu {
   @include hide-block;
-  transition-delay: 400ms;
+  transition-delay: 500ms;
 
   &.active-animation {
     @include show-block;
