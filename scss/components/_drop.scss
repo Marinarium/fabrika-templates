@@ -83,7 +83,7 @@
 
 .pulse {
   box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
-  animation: pulse 2s ease-in infinite;
+  animation: pulse 2300ms ease-in 1s infinite;
 }
 
 .pulse:hover {
