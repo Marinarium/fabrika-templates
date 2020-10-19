@@ -5,6 +5,10 @@
   font-size: 60px;
   line-height: 100%;
   color: #000;
+
+  @include respond-to(laptops) {
+    font-size: 45px;
+  }
 }
 
 .section-title_light {

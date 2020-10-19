@@ -4,6 +4,9 @@
   background-position: center;
   background-size: auto;
   margin-bottom: 50px;
+  @include respond-to(laptops) {
+    background-size: cover;
+  }
 }
 
 .first-screen__text-content {
@@ -24,6 +27,10 @@
 
   &.active-animation {
     @include show-block;
+  }
+
+  @include respond-to(laptops) {
+    margin-bottom: 40px;
   }
 }
 
@@ -56,6 +63,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include respond-to(laptops) {
+    font-size: 28px;
   }
 }
 

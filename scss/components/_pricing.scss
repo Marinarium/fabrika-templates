@@ -17,6 +17,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 1210px;
+    margin-bottom: 40px;
   }
 }
 
@@ -33,6 +34,9 @@
   border-radius: 10px;
   text-decoration: none;
   display: inline-block;
+  @include respond-to(laptops) {
+    font-size: 16px;
+  }
 }
 
 .pricing__list {
@@ -48,6 +52,10 @@
   padding: 30px;
   box-sizing: border-box;
   margin: 0 10px;
+
+  @include respond-to(laptops){
+    min-width: 800px;
+  }
 }
 
 .pricing__frame{
@@ -60,6 +68,10 @@
   justify-content: center;
   align-items: center;
   margin-right: 35px;
+
+  @include respond-to(laptops) {
+    margin-right: 20px;
+  }
 }
 
 .pricing__text-content {
@@ -78,6 +90,10 @@
   font-size: 36px;
   line-height: 100%;
   margin-bottom: 9px;
+
+  @include respond-to(laptops) {
+    font-size: 28px;
+  }
 }
 
 .pricing__p {
@@ -105,6 +121,10 @@
 
 .pricing__wrap-price {
   font-size: 36px;
+
+  @include respond-to(laptops) {
+    font-size: 28px;
+  }
 }
 
 .pricing__price{
@@ -124,4 +144,8 @@
 .pricing__control-info {
   flex-grow: 1;
   flex-basis: 100%;
+}
+
+.pricing__control img {
+  width: 100%;
 }

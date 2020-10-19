@@ -7,7 +7,6 @@
   margin-right: 17.344%;
   background-color: $accent-color;
   color: #fff;
-  box-shadow: 0px 10px 30px rgba(49, 122, 247, 0.2);
   border-radius: 50px;
   padding: 277px 50px 42px;
   margin-bottom: 28px;
@@ -17,11 +16,15 @@
     margin-right: auto;
     max-width: 1210px;
     box-sizing: border-box;
+    padding-top: 210px;
   }
 }
 
 .drop__head {
   margin-bottom: 211px;
+  @include respond-to(laptops) {
+    margin-bottom: 170px;
+  }
 }
 
 .drop__title {
@@ -34,7 +37,7 @@
   margin-bottom: 30px;
 
   @include respond-to(laptops){
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 
@@ -45,6 +48,10 @@
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
+
+  @include respond-to(laptops) {
+    font-size: 16px;
+  }
 }
 
 .drop__extra-info {
@@ -54,6 +61,10 @@
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
+
+  @include respond-to(laptops) {
+    font-size: 16px;
+  }
 }
 
 .drop__p {
@@ -64,9 +75,28 @@
   line-height: 1.38;
   text-align: center;
   color: #444444;
+
+  @include respond-to(laptops) {
+    font-size: 16px;
+  }
 }
 
+.pulse {
+  box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+  animation: pulse 2s ease-in infinite;
+}
 
+@keyframes pulse {
+  0% {
+    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+  }
+  60% {
+    box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3);
+  }
+  100% {
+    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+  }
+}
 
 
 

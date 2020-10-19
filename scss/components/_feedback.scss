@@ -8,11 +8,16 @@
     margin-right: auto;
     max-width: 1210px;
     box-sizing: border-box;
+    margin-bottom: 60px;
   }
 }
 
 .feedback__title {
   margin-bottom: 50px;
+
+  @include respond-to(laptops) {
+    margin-bottom: 20px;
+  }
 }
 
 .feedback__desc {
@@ -23,6 +28,10 @@
   line-height: 130%;
   color: #000;
   max-width: 770px;
+
+  @include respond-to(laptops) {
+    font-size: 28px;
+  }
 }
 
 .feedback__link {
