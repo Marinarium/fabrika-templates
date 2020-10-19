@@ -1119,32 +1119,32 @@ $phone: 480px;
       font-size: 16px; } }
 
 .pulse {
-  -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
-          box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+  -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
+          box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
   -webkit-animation: pulse 2s ease-in infinite;
           animation: pulse 2s ease-in infinite; }
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
-            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2); }
+    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
+            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3); }
   60% {
-    -webkit-box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3);
-            box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3); }
+    -webkit-box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.5);
+            box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.5); }
   100% {
-    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
-            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2); } }
+    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
+            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3); } }
 
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
-            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2); }
+    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
+            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3); }
   60% {
-    -webkit-box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3);
-            box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3); }
+    -webkit-box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.5);
+            box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.5); }
   100% {
-    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
-            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2); } }
+    -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
+            box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3); } }
 
 .feedback {
   margin-left: 17.344%;

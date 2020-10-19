@@ -82,19 +82,19 @@
 }
 
 .pulse {
-  box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+  box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
   animation: pulse 2s ease-in infinite;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
   }
   60% {
-    box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.3);
+    box-shadow: 10px 10px 30px rgba(49, 122, 247, 0.5);
   }
   100% {
-    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.2);
+    box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
   }
 }
 
