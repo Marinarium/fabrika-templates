@@ -1124,6 +1124,10 @@ $phone: 480px;
   -webkit-animation: pulse 2s ease-in infinite;
           animation: pulse 2s ease-in infinite; }
 
+.pulse:hover {
+  -webkit-animation: none;
+          animation: none; }
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 2px 2px 8px rgba(49, 122, 247, 0.3);
