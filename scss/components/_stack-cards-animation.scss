@@ -1,10 +1,15 @@
 .loading {
   position: relative;
-  right: -140px;
+  right: -160px;
+  top: -40px;
   width: 100px;
   height: 35px;
   transform-style: preserve-3d;
   border-radius: 30px;
+  @include respond-to(laptops){
+    top: 0;
+    right: -140px;
+  }
 }
 
 

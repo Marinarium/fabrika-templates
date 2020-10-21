@@ -677,12 +677,17 @@ $phone: 480px;
 
 .loading {
   position: relative;
-  right: -140px;
+  right: -160px;
+  top: -40px;
   width: 100px;
   height: 35px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   border-radius: 30px; }
+  @media only screen and (max-width: 1680px) {
+    .loading {
+      top: 0;
+      right: -140px; } }
 
 .loading div {
   position: absolute;
@@ -713,14 +718,12 @@ $phone: 480px;
             transform: perspective(500px) translate3d(-50px, 30px, 50px);
     opacity: 1;
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    z-index: 0; }
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
   35%,
   100% {
     -webkit-transform: perspective(-100px) translate3d(-10px, 50px, 50px);
             transform: perspective(-100px) translate3d(-10px, 50px, 50px);
-    opacity: 1;
-    z-index: -1; } }
+    opacity: 1; } }
 
 @keyframes animate {
   0% {
@@ -734,14 +737,12 @@ $phone: 480px;
             transform: perspective(500px) translate3d(-50px, 30px, 50px);
     opacity: 1;
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    z-index: 0; }
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
   35%,
   100% {
     -webkit-transform: perspective(-100px) translate3d(-10px, 50px, 50px);
             transform: perspective(-100px) translate3d(-10px, 50px, 50px);
-    opacity: 1;
-    z-index: -1; } }
+    opacity: 1; } }
 
 .loading div span {
   font-family: Inter, sans-serif;
