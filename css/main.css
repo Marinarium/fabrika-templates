@@ -469,13 +469,6 @@ $phone: 480px;
     .pricing__link {
       font-size: 16px; } }
 
-.pricing__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateX(-707px);
-          transform: translateX(-707px); }
-
 .pricing__item {
   min-width: 917px;
   background-color: #fff;
@@ -585,6 +578,38 @@ $phone: 480px;
 
 .pricing__control img {
   width: 100%; }
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(calc(-937px * 3));
+            transform: translateX(calc(-937px * 3)); } }
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(calc(-937px * 3));
+            transform: translateX(calc(-937px * 3)); } }
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(937px * 6); }
+  .slider .slide {
+    height: 238px;
+    width: 937px; }
 
 .workflow {
   margin-bottom: 61px;
