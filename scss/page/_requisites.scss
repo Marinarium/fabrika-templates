@@ -1,0 +1,23 @@
+.main_requisites {
+  padding-left: 9%;
+  @media (max-width: 1024px) {
+    padding-left: 0;
+  }
+}
+
+.requisites__title {
+  margin-bottom: 50px;
+}
+
+.requisites__item {
+  font-family: $sans-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+}
+
+.requisites__item_cap {
+  text-transform: uppercase;
+}

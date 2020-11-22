@@ -1,0 +1,36 @@
+.wrap-about {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  padding: 0 100px 15px 98px;
+  z-index: 100;
+  max-width: 1366px;
+  box-sizing: border-box;
+}
+
+.header_about {
+  justify-content: flex-start;
+  margin-bottom: 70px;
+
+  .logo_about {
+    margin-right: 29px;
+    font-size: 24px;
+  }
+
+  .main-menu {
+    flex-grow: 1;
+    display: flex;
+
+    &__list {
+      margin: auto;
+    }
+  }
+
+  .main-menu__link {
+    font-size: 14px;
+  }
+
+  .user-menu__link {
+    font-size: 14px;
+  }
+}

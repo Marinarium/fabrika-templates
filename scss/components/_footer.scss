@@ -27,7 +27,12 @@ body {
   }
 }
 
-.lang, .year {
+.contact-details {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.lang, .year, .mail, .phone {
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -37,9 +42,29 @@ body {
   text-decoration: none;
   cursor: pointer;
   margin-right: 36px;
+  white-space: nowrap;
+}
+
+.year {
+  margin-right: 40px;
+}
+
+.mail, .phone {
+  display: block;
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
+}
+
+.mail {
+  margin-left: 10px;
 }
 
 .footer-menu{
+  &__list {
+    white-space: nowrap;
+  }
+
   &__item{
     display: inline-block;
     margin-right: 44px;
@@ -62,7 +87,7 @@ body {
 }
 
 
-.footer_home {
+.footer_home{
   margin-left: 19.635%;
   margin-right: 19.635%;
 

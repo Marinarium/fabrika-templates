@@ -1,0 +1,29 @@
+.main_error{
+  padding-left: 9%;
+  @media (max-width: 1024px) {
+    padding-left: 0;
+  }
+}
+
+.error__title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.error__subtitle {
+  margin-bottom: 50px;
+}
+
+.error__link {
+  font-family: $sans-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+  display: block;
+}
+
+.error__link:last-of-type {
+  margin-bottom: 70px;
+}

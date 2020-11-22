@@ -20,7 +20,7 @@
   }
 }
 
-.wrap-home {
+.wrap-home{
   background-color: #fff;
   width: 100%;
   position: fixed;
@@ -71,6 +71,10 @@
     @include show-block;
   }
 
+  &__list {
+    white-space: nowrap;
+  }
+
   &__item {
     display: inline-block;
     margin-right: 50px;
@@ -100,12 +104,16 @@
     @include show-block;
   }
 
+  &__list {
+    white-space: nowrap;
+  }
+
   &__item {
     display: inline-block;
   }
 }
 
-.header_home {
+.header_home{
   .main-menu {
     flex-basis: 35.5%;
   }
@@ -118,3 +126,5 @@
     font-size: 14px;
   }
 }
+
+
