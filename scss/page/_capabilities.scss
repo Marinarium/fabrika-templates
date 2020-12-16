@@ -1,18 +1,38 @@
 .capabilities__title{
   margin-bottom: 50px;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .capabilities__lead {
   margin-bottom: 30px;
-  max-width: 800px;;
+  max-width: 800px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .materials__title {
   margin-bottom: 30px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .materials__lead {
   margin-bottom: 30px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .materials__list {
@@ -24,6 +44,14 @@
 
   @media all and (max-width: 1024px) {
     grid-template-columns: repeat(1, auto);
+  }
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
   }
 }
 
@@ -43,6 +71,10 @@
 
 .materials__name {
   margin-bottom: 30px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .materials__tech {
@@ -71,10 +103,18 @@
 
 .tech-support__title {
   margin-bottom: 30px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .tech-support__lead {
   margin-bottom: 30px;
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .tech-support__item {
@@ -88,10 +128,22 @@
   @media all and (max-width: 1024px) {
     width: auto;
   }
+
+  @include respond-to(phones){
+    margin-bottom: 10px;
+  }
 }
 
 .tech-support__item:last-child {
   margin-bottom: 94px;
+
+  @include respond-to(tablets){
+    margin-bottom: 60px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 30px;
+  }
 }
 
 .tech-support__name {
@@ -112,10 +164,22 @@
   @media all and (max-width: 1024px) {
     flex-direction: column;
   }
+
+  @include respond-to(tablets){
+    font-size: 16px;
+  }
+
+  @include respond-to(tablets){
+    font-size: 12px;
+  }
 }
 
 .tech-support__char-bullet {
   margin-right: 60px;
+
+  @include respond-to(phones){
+    margin-right: 20px;
+  }
 }
 
 .tech-support__char-bullet:before {

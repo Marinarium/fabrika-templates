@@ -7,6 +7,14 @@
 
 .requisites__title {
   margin-bottom: 50px;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 10px;
+  }
 }
 
 .requisites__item {
@@ -16,6 +24,14 @@
   font-size: 18px;
   line-height: 150%;
   color: #000;
+
+  @include respond-to(tablets){
+    font-size: 16px;
+  }
+
+  @include respond-to(phones){
+    font-size: 14px;
+  }
 }
 
 .requisites__item_cap {

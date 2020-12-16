@@ -1,5 +1,14 @@
 .drop {
   margin-bottom: 50px;
+
+  @include respond-to(laptops){
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .drop__box {
@@ -18,12 +27,25 @@
     box-sizing: border-box;
     padding-top: 210px;
   }
+
+  @include respond-to(tablets){
+    padding-top: 70px;
+  }
+
+  @include respond-to(phones){
+    padding: 76px 83px 11px;
+    border-radius: 25px;
+  }
 }
 
 .drop__head {
   margin-bottom: 211px;
   @include respond-to(laptops) {
     margin-bottom: 170px;
+  }
+
+  @include respond-to(tablets) {
+    margin-bottom: 51px;
   }
 }
 
@@ -37,7 +59,16 @@
   margin-bottom: 30px;
 
   @include respond-to(laptops){
-    font-size: 60px;
+     font-size: 60px;
+   }
+
+  @include respond-to(tablets){
+    font-size: 40px;
+  }
+
+  @include respond-to(phones){
+    font-weight: 600;
+    font-size: 24px;
   }
 }
 
@@ -52,6 +83,10 @@
   @include respond-to(laptops) {
     font-size: 16px;
   }
+
+  @include respond-to(tablets) {
+    display: none;
+  }
 }
 
 .drop__extra-info {
@@ -64,6 +99,10 @@
 
   @include respond-to(laptops) {
     font-size: 16px;
+  }
+
+  @include respond-to(tablets) {
+    font-size: 10px;
   }
 }
 
@@ -78,6 +117,14 @@
 
   @include respond-to(laptops) {
     font-size: 16px;
+  }
+
+  @include respond-to(tablets) {
+     font-size: 14px;
+   }
+
+  @include respond-to(phones) {
+    display: none;
   }
 }
 

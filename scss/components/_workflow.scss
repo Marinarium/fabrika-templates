@@ -3,9 +3,15 @@
   margin-left: 17.344%;
 
   @include respond-to(laptops) {
-    margin: auto;
+    margin: 0 5%;
     max-width: 1210px;
     //margin-bottom: 61px;
+  }
+
+  @include respond-to(phones) {
+    margin: 0 5%;
+    max-width: 1210px;
+    margin-bottom: 25px;
   }
 
   @include hide-block;
@@ -23,6 +29,10 @@
 
   @include respond-to(laptops) {
     margin-bottom: 40px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 0;
   }
 }
 
@@ -47,6 +57,24 @@
   @include respond-to(laptops) {
     font-size: 16px;
   }
+
+  @include respond-to(phones){
+    display: none;
+  }
+}
+
+.workflow__list {
+  display: block;
+  @include respond-to(tablets){
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include respond-to(phones){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .workflow__step {
@@ -54,6 +82,27 @@
   display: inline-block;
   margin-right: 11.154%;
   vertical-align: top;
+  @include respond-to(laptops) {
+    margin-right: 9%;
+  }
+
+  @include respond-to(tablets) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(phones) {
+    margin: 0;
+    width: 30%;
+  }
+
+  &:nth-child(2){
+    margin-bottom: 50px;
+
+    @include respond-to(phones) {
+      margin-bottom: 0;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -72,6 +121,11 @@
   @include respond-to(laptops) {
     font-size: 28px;
   }
+
+  @include respond-to(phones) {
+    font-size: 12px;
+    line-height: 110%;
+  }
 }
 
 .workflow__extra-link {
@@ -88,6 +142,10 @@
   font-size: 18px;
   line-height: 120%;
   color: #C0C0C0;
+
+  @include respond-to(phones){
+    display: none;
+  }
 
   &_sm {
     max-width: 248px;

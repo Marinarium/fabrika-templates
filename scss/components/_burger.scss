@@ -1,0 +1,102 @@
+.burger-wrap {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond-to(tablets) {
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 250px;
+    top: 5px;
+    right: 0;
+    align-items: flex-end;
+    background: rgba(242, 242, 242, 0.9);
+    border-radius: 10px;
+    padding: 88px 5% 50px 0;
+  }
+
+  @include respond-to(phones) {
+    width: 117px;
+    padding: 55px 5% 25px 0;
+  }
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 24px;
+  margin-left: auto;
+  cursor: pointer;
+  @include respond-to(tablets) {
+    display: inline-block;
+  }
+  @include respond-to(phones) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  height: 3px;
+  background-color: #333333;
+  z-index: 2000;
+  border-radius: 10px;
+  @include respond-to(phones) {
+    height: 2px;
+  }
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+}
+
+.burger span:nth-child(2), .burger span:nth-child(3) {
+  top: 10px;
+  @include respond-to(phones) {
+    top: 6px;
+  }
+}
+
+.burger span:nth-child(4) {
+  top: 20px;
+  @include respond-to(phones) {
+    top: 12px;
+  }
+}
+
+.burger.active span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+  @include respond-to(phones) {
+    top: 6px;
+  }
+}
+
+.burger.active span:nth-child(2) {
+  transform: rotate(45deg);
+  background-color: #333333;
+}
+
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  background-color: #333333;
+}
+
+.burger.active span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+  @include respond-to(phones) {
+    top: 6px;
+  }
+}

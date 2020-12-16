@@ -27,6 +27,23 @@
     margin-top: 50px;
   }
 
+  @include respond-to(tablets) {
+    font-size: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 60px 80px 60px 60px;
+    background-size: 170%;
+    background-position: inherit;
+  }
+
+  @include respond-to(phones) {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 29px 60px 30px 30px;
+    border-radius: 25px;
+  }
+
   @include hide-block;
   transform: translate(0, 110%);
   transition-delay: 0ms;

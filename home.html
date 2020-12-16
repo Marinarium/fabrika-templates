@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>fabrika</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
@@ -10,36 +11,44 @@
 <div class="wrap-home">
     <header class="header header_home">
         <a href="#" class="logo logo_home logo_beta anim-item anim-once">fabrika</a>
-        <button class="btn btn_black-white anim-item anim-once">Calculate</button>
-        <nav class="main-menu anim-item anim-once">
-            <ul class="main-menu__list">
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Platform</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Capabilities</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Company</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="user-menu anim-item anim-once">
-            <ul class="user-menu__list">
-                <li class="user-menu__item">
-                    <a href="#" class="user-menu__link user-menu__link_in">Sign in</a>
-                </li>
-                <li class="user-menu__item">
-                    <a href="#" class="user-menu__link user-menu__link_up">Sign up</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="burger-wrap visually-hiddens">
+            <button class="btn btn_black-white anim-item anim-once">Calculate</button>
+            <nav class="main-menu anim-item anim-once">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Platform</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Capabilities</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Company</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="user-menu anim-item anim-once">
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link user-menu__link_in">Sign in</a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link user-menu__link_up">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </div>
 <main class="main">
     <section class="first-screen">
         <div class="first-screen__text-content">
-            <h2 class="section-title first-screen__title  anim-item anim-once">Your online manufacture service</h2>
+            <h2 class="section-title first-screen__title  anim-item anim-once">Your online <br>manufacture service</h2>
             <ul class="first-screen__advantages  anim-item anim-once">
                 <li class="first-screen__advantage-item"><span class="first-screen__b">Instant calculation.</span> Just
                     upload parts and get price
@@ -364,7 +373,7 @@
     <section class="feedback">
         <h2 class="feedback__title section-title">For partners</h2>
         <p class="feedback__desc">Please, write letter to <a href="mailto:partner@fabrika.cloud" class="feedback__link">partner@fabrika.cloud</a>,
-            if you have manufacture capabilities</p>
+            <br>if you have manufacture capabilities</p>
     </section>
 </main>
 <footer class="footer footer_home">
@@ -381,7 +390,9 @@
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Сonfidentiality</a></li>
         </ul>
     </div>
+    <a href="mailto:mail@fabrika.cloud" class="footer-mail">mail@fabrika.cloud</a>
 </footer>
 <script src="js/scroll-animation.js"></script>
+<script src="js/show-menu.js"></script>
 </body>
 </html>

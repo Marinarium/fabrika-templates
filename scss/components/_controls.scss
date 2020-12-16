@@ -9,10 +9,18 @@
   display: inline-block;
   text-align: center;
 
+  @include respond-to(phones){
+    font-size: 12px;
+  }
+
   &_in{
     color: #2C2C2C;
     padding: 11px 10px;
     margin-right: 10px;
+    @include respond-to(tablets) {
+      padding: 11px 0;
+      margin-right: 0;
+    }
   }
 
   &_up{
@@ -36,6 +44,10 @@
   color: $accent-color;
   text-decoration: none;
 
+  @include respond-to(tablets){
+    font-size: 12px;
+  }
+
   &_light {
     font-size: 12px;
     line-height: 133%;
@@ -56,6 +68,11 @@
   background-color: #fff;
   border: 1px solid #000;
   cursor: pointer;
+
+  @include respond-to(tablets){
+    font-size: 12px;
+    padding: 8px 15px;
+  }
 }
 
 .btn_black-white {
@@ -71,6 +88,22 @@
   background-color: #fff;
   border: 1px solid #000;
   cursor: pointer;
+  position: relative;
+  left: 140px;
+
+  @include respond-to(laptops) {
+    left: 80px;
+  }
+
+  @include respond-to(tablets) {
+    position: static;
+    background-color: transparent;
+  }
+
+  @include respond-to(phones){
+    font-size: 12px;
+    padding: 10px 12px;
+  }
 
   @include hide-block;
   transition-delay: 200ms;

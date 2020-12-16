@@ -10,3 +10,39 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.main {
+  overflow-x: hidden;
+  @include respond-to(phones){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.first-screen {
+  order: 1;
+}
+
+.workflow {
+  order: 3
+}
+
+.motto {
+  order: 2;
+}
+
+.tech {
+  order: 4
+}
+
+.drop {
+  order: 4
+}
+
+.feedback {
+  order: 4
+}
+
+footer {
+  overflow-x: hidden;
+}

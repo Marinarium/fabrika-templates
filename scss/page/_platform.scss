@@ -1,6 +1,14 @@
 .platform__title {
   margin-bottom: 50px;
   padding-left: 9%;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .platform__content {
@@ -12,6 +20,10 @@
 .platform__left {
   margin-right: 60px;
   padding-left: 9%;
+
+  @include respond-to(tablets){
+    margin-right: 20px;
+  }
 }
 
 .platform__right {
@@ -20,14 +32,34 @@
 
 .how-it-works__step {
   margin-bottom: 50px;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .how-it-works__step:last-child{
   margin-bottom: 70px;
+
+  @include respond-to(tablets){
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 30px;
+  }
 }
 
 .how-it-works__title {
   margin-bottom: 20px;
+
+  @include respond-to(phones){
+    margin-bottom: 10px;
+  }
 }
 
 .how-it-works__p {
@@ -40,6 +72,10 @@
 
 .order-details__title {
   margin-bottom: 35px;
+
+  @include respond-to(phones){
+    margin-bottom: 25px;
+  }
 }
 
 .order-details__item {
@@ -50,10 +86,26 @@
   line-height: 1.3;
   color: #000;
   margin-bottom: 25px;
+
+  @include respond-to(tablets){
+    font-size: 16px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 15px;
+  }
 }
 
 .order-details__item:last-child{
   margin-bottom: 70px;
+
+  @include respond-to(tablets){
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 30px;
+  }
 }
 
 .light-text {
@@ -66,6 +118,10 @@
 
 .bank-cards__img {
   margin-right: 20px;
+
+  @include respond-to(phones){
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -80,6 +136,10 @@
   .platform__left {
     margin-right: 40px;
     padding-left: 0;
+
+    @include respond-to(phones){
+      margin-right: 20px;
+    }
   }
 }
 

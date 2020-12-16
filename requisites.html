@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Requisites</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
@@ -11,43 +12,55 @@
     <div class="content">
         <header class="header header_about">
             <a href="#" class="logo logo_about anim-item anim-once">fabrika</a>
-            <button class="btn btn_black-white anim-item anim-once">Calculate</button>
-            <nav class="main-menu anim-item anim-once">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">Platform</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">Capabilities</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">Company</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="user-menu anim-item anim-once">
-                <ul class="user-menu__list">
-                    <li class="user-menu__item">
-                        <a href="#" class="user-menu__link user-menu__link_in">Sign in</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a href="#" class="user-menu__link user-menu__link_up">Sign up</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="burger-wrap visually-hiddens">
+                <button class="btn btn_black-white anim-item anim-once">Calculate</button>
+                <nav class="main-menu anim-item anim-once">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Platform</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Capabilities</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Company</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-menu anim-item anim-once">
+                    <ul class="user-menu__list">
+                        <li class="user-menu__item">
+                            <a href="#" class="user-menu__link user-menu__link_in">Sign in</a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a href="#" class="user-menu__link user-menu__link_up">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main main_requisites">
             <h2 class="requisites__title page-title">Реквизиты</h2>
             <ul class="requisites__list">
-                <li class="requisites__item requisites__item_cap">ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ БАБИН АВЕНИР ЛЕОНИДОВИЧ,</li>
+                <li class="requisites__item requisites__item_cap">ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ БАБИН АВЕНИР
+                    ЛЕОНИДОВИЧ,
+                </li>
                 <li class="requisites__item requisites__item_cap">ИНН: 380897139019,</li>
-                <li class="requisites__item requisites__item_cap">ОГРН: 319774600478234, </li>
-                <li class="requisites__item">Расчетный счет: 40802810000001204468, </li>
-                <li class="requisites__item">Банк: АО "ТИНЬКОФФ БАНК", </li>
-                <li class="requisites__item">ИНН банка: 7710140679, </li>
-                <li class="requisites__item"> БИК банка: 044525974, </li>
+                <li class="requisites__item requisites__item_cap">ОГРН: 319774600478234,</li>
+                <li class="requisites__item">Расчетный счет: 40802810000001204468,</li>
+                <li class="requisites__item">Банк: АО "ТИНЬКОФФ БАНК",</li>
+                <li class="requisites__item">ИНН банка: 7710140679,</li>
+                <li class="requisites__item"> БИК банка: 044525974,</li>
                 <li class="requisites__item">Корреспондентский счет банка: 30101810145250000974,</li>
-                <li class="requisites__item">Юридический адрес банка: Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1</li>
+                <li class="requisites__item">Юридический адрес банка: Москва, 123060, 1-й Волоколамский проезд, д. 10,
+                    стр. 1
+                </li>
             </ul>
         </main>
     </div>
@@ -69,8 +82,10 @@
                 <li class="footer-menu__item"><a href="#" class="footer-menu__link">Сonfidentiality</a></li>
             </ul>
         </div>
+        <a href="mailto:mail@fabrika.cloud" class="footer-mail">mail@fabrika.cloud</a>
     </footer>
 </div>
 <script src="js/scroll-animation.js"></script>
+<script src="js/show-menu.js"></script>
 </body>
 </html>

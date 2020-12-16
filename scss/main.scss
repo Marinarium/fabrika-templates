@@ -6,6 +6,7 @@
 @import "base/basic";
 
 @import "components/header";
+@import "components/burger";
 @import "components/controls";
 @import "components/titles";
 @import "components/first-screen";
@@ -20,7 +21,6 @@
 @import "components/feedback";
 @import "components/footer";
 
-
 @import "page/sign-in";
 @import "page/sign-up";
 @import "page/password-recovery";
@@ -31,5 +31,7 @@
 @import "page/requisites";
 @import "page/terms-of-use";
 @import "page/error";
+
+@import "utilities/modifiers";
 
 

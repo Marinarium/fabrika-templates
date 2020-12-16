@@ -5,7 +5,12 @@
   background-size: auto;
   margin-bottom: 50px;
   @include respond-to(laptops) {
-    background-size: cover;
+    background-size: 1766px 877px;
+    margin: 0 5%;
+    background-position: top;
+  }
+  @include respond-to(phones) {
+    background-size: 1366px 477px;
   }
 }
 
@@ -15,6 +20,10 @@
   padding-top: 660px;
   @include respond-to(laptops) {
     margin: auto;
+    margin-bottom: 20px;
+  }
+  @include respond-to(phones) {
+    padding-top: 360px;
   }
 }
 
@@ -31,6 +40,16 @@
 
   @include respond-to(laptops) {
     margin-bottom: 40px;
+  }
+
+  @include respond-to(tablets) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(phones) {
+    font-size: 24px;
+    margin-bottom: 15px
   }
 }
 
@@ -68,8 +87,25 @@
   @include respond-to(laptops) {
     font-size: 28px;
   }
+
+  @include respond-to(tablets) {
+    font-size: 20px;
+  }
+
+  @include respond-to(phones) {
+    font-size: 12px;
+    margin-right: 10px;
+    width: 100px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .first-screen__b {
   color: #000;
+
+  @include respond-to(phones){
+    display: block;
+  }
 }

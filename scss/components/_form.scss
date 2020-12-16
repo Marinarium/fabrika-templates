@@ -12,6 +12,10 @@
     font-feature-settings: 'kern' off;
     color: #686E7D;
     margin-bottom: 20px;
+
+    @include respond-to(tablets){
+      font-size: 24px;
+    }
   }
 
   &__desc {
@@ -28,6 +32,11 @@
     letter-spacing: -0.02em;
     color: #212121;
     margin-bottom: 4px;
+
+
+    @include respond-to(tablets){
+      font-size: 12px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -55,6 +64,10 @@
     color: #212121;
     display: block;
     margin-bottom: 4px;
+
+    @include respond-to(tablets){
+      font-size: 12px;
+    }
   }
 
   &__input {
@@ -70,6 +83,10 @@
     border: 1px solid rgba(33, 33, 33, 0.08);
     box-sizing: border-box;
     border-radius: 2px;
+
+    @include respond-to(tablets){
+      font-size: 12px;
+    }
   }
 
   ::placeholder {
@@ -200,6 +217,11 @@
     background-color: #fff;
     border: 1px solid #000;
     cursor: pointer;
+
+    @include respond-to(tablets){
+      font-size: 12px;
+      padding: 8px 15px;
+    }
   }
 
 

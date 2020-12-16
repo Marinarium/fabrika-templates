@@ -3,24 +3,25 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 18px;
-  :focus{
+
+  :focus {
     outline-width: 1px;
     outline-color: $accent-color;
     outline-style: solid;
     outline-offset: 2px;
   }
 
-  &_home{
+  &_home {
     max-width: 1210px;
     margin-left: 17.344%;
 
     @include respond-to(laptops) {
-      margin: auto;
+      margin: auto 5%;
     }
   }
 }
 
-.wrap-home{
+.wrap-home {
   background-color: #fff;
   width: 100%;
   position: fixed;
@@ -37,9 +38,22 @@
   color: #2F2F2F;
   text-decoration: none;
 
-  &_home{
+  @include respond-to(phones) {
+    font-size: 16px;
+  }
+
+  &_home {
     letter-spacing: 0.2em;
     font-size: 25px;
+
+    @include respond-to(phones) {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &_beta {
+    display: flex;
   }
 
   &_beta:after {
@@ -53,6 +67,12 @@
     display: inline-block;
     position: relative;
     top: -5px;
+
+    @include respond-to(phones) {
+      width: 22px;
+      height: 10px;
+      background-size: contain;
+    }
   }
 
   @include hide-block;
@@ -73,13 +93,29 @@
 
   &__list {
     white-space: nowrap;
+    @include respond-to(tablets) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      margin: 19px 0 30px;
+    }
+
+    @include respond-to(phones){
+      margin: 10px 0 20px;
+    }
   }
 
   &__item {
     display: inline-block;
     margin-right: 50px;
+
     &:last-child {
       margin-right: 0;
+    }
+
+    @include respond-to(tablets) {
+      margin-right: 0;
+      margin-bottom: 15px;
     }
   }
 
@@ -93,6 +129,13 @@
     color: $main-color;
     cursor: pointer;
     display: inline-block;
+    @include respond-to(tablets) {
+      text-decoration: underline;
+    }
+
+    @include respond-to(phones){
+      font-size: 12px;
+    }
   }
 }
 
@@ -100,12 +143,22 @@
   @include hide-block;
   transition-delay: 500ms;
 
+  @include respond-to(tablets) {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
   &.active-animation {
     @include show-block;
   }
 
   &__list {
     white-space: nowrap;
+    @include respond-to(tablets) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
   }
 
   &__item {
@@ -113,17 +166,23 @@
   }
 }
 
-.header_home{
+.header_home {
   .main-menu {
     flex-basis: 35.5%;
   }
 
   .main-menu__link {
     font-size: 14px;
+    @include respond-to(phones){
+      font-size: 12px;
+    }
   }
 
   .user-menu__link {
     font-size: 14px;
+    @include respond-to(phones){
+      font-size: 12px;
+    }
   }
 }
 

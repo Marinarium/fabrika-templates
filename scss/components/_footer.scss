@@ -25,11 +25,34 @@ body {
     outline-style: solid;
     outline-offset: 2px;
   }
+
+  @include respond-to(laptops) {
+    margin: auto 5%;
+  }
+
+  &_about {
+    @include respond-to(laptops) {
+      margin: auto 0;
+    }
+  }
+}
+
+.footer_about .wrap {
+  display: flex;
+  align-items: center;
+
+  @include respond-to(phones){
+    flex-wrap: wrap;
+  }
 }
 
 .contact-details {
   display: inline-block;
   margin-top: 5px;
+
+  @include respond-to(tablets){
+    margin-top:2px;
+  }
 }
 
 .lang, .year, .mail, .phone {
@@ -41,12 +64,23 @@ body {
   color: #3B3B3B;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 36px;
+  margin-right: 30px;
   white-space: nowrap;
+
+  @include respond-to(laptops){
+    margin-right: 20px;
+  }
+  @include respond-to(tablets) {
+    font-size: 12px;
+    margin-right: 25px;
+  }
 }
 
 .year {
   margin-right: 40px;
+  @include respond-to(tablets) {
+    margin-right: 25px;
+  }
 }
 
 .mail, .phone {
@@ -57,10 +91,18 @@ body {
 }
 
 .mail {
-  margin-left: 10px;
+  margin-right: 10px;
+
+  @include respond-to(tablets){
+    display: none;
+  }
 }
 
 .footer-menu{
+  @include respond-to(tablets) {
+    display: none;
+  }
+
   &__list {
     white-space: nowrap;
   }
@@ -92,8 +134,22 @@ body {
   margin-right: 19.635%;
 
   @include respond-to(laptops) {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 5%;
+      margin-right: 5%;
       max-width: 1210px;
+  }
+}
+
+.footer-mail {
+  display: none;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-decoration: none;
+  color: #3B3B3B;
+  @include respond-to(tablets) {
+    display: inline-block;
   }
 }

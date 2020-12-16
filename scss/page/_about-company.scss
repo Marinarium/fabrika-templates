@@ -27,13 +27,30 @@
 
 .company__title {
   margin-bottom: 50px;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .about-company__title {
   margin-bottom: 20px;
 }
+
 .about-company__p {
   margin-bottom: 50px;
+
+  @include respond-to(tablets){
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 20px;
+  }
 }
 
 .about-company__p:last-of-type {

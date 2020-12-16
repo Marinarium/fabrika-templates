@@ -2,6 +2,18 @@
   margin-bottom: 70px;
   position: relative;
 
+  @include respond-to(laptops) {
+    margin: 0 5% 70px;
+  }
+
+  @include respond-to(tablets) {
+    margin: 0 5% 40px;
+  }
+
+  @include respond-to(phones) {
+    margin-bottom: 25px;
+  }
+
   &:before {
     content: '';
     display: block;
@@ -16,7 +28,13 @@
 
     @include respond-to(laptops) {
       opacity: 0.8;
+      left: -6%;
     }
+
+    @include respond-to(tablets){
+      background-image: none;
+    }
+
   }
 }
 
@@ -38,10 +56,28 @@
   @include respond-to(laptops) {
     margin-bottom: 40px;
   }
+
+  @include respond-to(tablets){
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 15px;
+  }
 }
 
 .tech__main-title {
   margin-right: 40px;
+
+  @include respond-to(tablets){
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(phones){
+    margin-bottom: 0;
+  }
 }
 
 .tech__link {
@@ -61,18 +97,38 @@
   @include respond-to(laptops) {
     font-size: 16px;
   }
+
+  @include respond-to(tablets){
+    font-size: 14px;
+  }
+
+  @include respond-to(phones){
+    display: none;
+  }
 }
 
 .tech__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include respond-to(tablets){
+    flex-direction: column;
+  }
 }
 
 .tech__radio-list {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 590px;
+
+  @include respond-to(tablets){
+     flex-basis: auto;
+   }
+
+  @include respond-to(phones){
+    margin-bottom: 0;
+  }
 }
 
 .tech__radio-label {
@@ -81,6 +137,15 @@
   margin-right: 15px;
   margin-bottom: 15px;
   position: relative;
+
+  @include respond-to(tablets) {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  @include respond-to(phones){
+    padding: 8px 0;
+  }
 }
 
 .tech__radio {
@@ -108,6 +173,11 @@
     font-size: 20px;
     padding: 15px;
   }
+
+  @include respond-to(phones){
+    font-size: 10px;
+    padding: 8px;
+  }
 }
 
 .tech__radio:checked + .tech__radio-style {
@@ -117,6 +187,14 @@
 
 .tech__desc-list {
   flex-basis: 600px;
+
+  @include respond-to(tablets){
+    flex-basis: auto;
+  }
+
+  @include respond-to(phones){
+    display: none;
+  }
 }
 
 .tech__desc {
